@@ -1,0 +1,129 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 background:url('images/k.jpg')no-repeat;
+      background-size:cover;
+}
+
+.main-nav
+{
+	float:right;
+	 list-style:none;
+	 margin-top: 30px;  
+}
+.main-nav li
+{
+
+	display:inline-block;
+	align-content:left;
+}
+
+.main-nav li a 
+{
+	color: white;
+	text-decoration:none;
+	padding:5px 30px;
+	font-family: "Robonto",sans-seriff;
+	font-size:20px; 
+	text-align:center;
+	border:10px;
+
+
+}
+.main-nav li.active a
+{
+	border:1px solid white;
+}
+.main-nav li a:hover
+{
+	border:0.5px solid white;
+	background-color:#4CAF50;
+	transition:background 0.5s linear;
+}
+@media screen and (max-width: 500px) {
+  .navbar  li a {
+    float: none;
+    display: block;
+  }
+}
+
+
+.logo img{
+	width: 150 px;
+	height: auto;
+	float: left;
+
+}
+body{
+	font-family: monospace);
+}
+   .row
+   {
+   	width:100%;
+   	background-color:#555;
+   	overflow:auto;
+   }
+   .hero{
+   	position:absolute;
+   	width:1200px;
+   	margin-top:0;
+   	margin-left:0;
+   	text-align: center;
+   	   }
+   	   h1
+   	   {
+   	   	color:white;
+   	   	text-transform:uppercase;
+   	   	font-size: 70px;
+   	   	text-align:center;
+   	   	margin-top: 275px;
+   	   }
+.button
+{
+margin-top:30px;
+	margin-left: 440px;
+}
+.btn{
+	 border:1px solid white;
+	 padding:10px 30px;
+	 color:white;
+	 text-decoration:none;
+	 margin-right:5px ;
+	 font-size: 13px;
+	 text-transform:uppercase;
+}
+.btn-one
+{
+ background-color:darkorange;
+font-family:"Robonto", sans-seriff; 
+}
+
+.btn-two:hover
+{
+ background-color:darkorange;
+ transition:  all 0.5sec ease-in;
+font-family:"Robonto", sans-seriff; 
+}
+@media screen and (max-width: 700px)
+{
+	.main nav{ 
+		width:100%;
+		height:auto;
+		position:relative;
+	 }
+	 .main nav a{float:left;}
+	 	div.content{margin-left:0;}
+	 }
+}
+@media screen and (max-width: 400px) {
+  .nav a {
+    text-align: center;
+    float: none;
+  }
+}
+.fa fa-fw fa-home
+{
+	color: white;
+}

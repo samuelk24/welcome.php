@@ -26,7 +26,51 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
         body{ font: 14px sans-serif; text-align: center; }
+        .bounce{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(50%);
+            -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+            -moz-animation: bouncing-text 5s linear infinite alternate;
+            -webkit-animation: bouncing-text 5s linear infinite alternate;
+            animation: bouncing-text 10s linear infinite alternate;
+        }
         
+        @-moz-keyframes bouncing-text {
+            0% {
+                -moz-transform: translateX(50%);
+            }
+            100% {
+                -moz-transform: translateX(-50%);
+            }
+        }
+        
+        @-webkit-keyframes bouncing-text {
+            0% {
+                -webkit-transform: translateX(50%);
+            }
+            100% {
+                -webkit-transform: translateX(-50%);
+            }
+        }
+        
+        @keyframes bouncing-text {
+            0% {
+                -moz-transform: translateX(50%);
+                -webkit-transform: translateX(50%);
+                transform: translateX(50%);
+            }
+            100% {
+                -moz-transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
     </style>
     </style>
 </head>
@@ -37,101 +81,35 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
-        <a id ="home" href="index.php.php">Home</a>
+        <a id ="home" href="index.php">Home</a>
        
-    <form>
-    <table>
-        
-        <h1> PREVENTIVE MAINTENANCE INSPECTION BASED ON MBM-2<h1>
-        	
-        	
-        
-    </fieldset>
-    </table>
-</form>
-    </table>
-<fieldset>
-    <legend></legend>
-        <form onsubmit="return false">
-            <table>
-        <legend>
-        <tr>
-            <td>
-                <label for="uname">CUSTOMER</label>
-            </td>
-            <td>
-                <input type="text" id="username" name="username" size="30" maxlength="100">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for="uemail">ADDRESS</label>
-            </td>
-            <td>
-                <input type="text" name="usemail"  size="30" maxlength="100">
-            </td>
-            
-        
-        <tr>
-            <td>
-                <label for="age">CITY/TOWN</label>
-            </td>
-            <td>
-                <input type="text" name="userage" id="age" size="30" maxlength="100">
-            </td>
-        </tr>
-    </legend>
-    <legend>
-</tr>
-        <tr>
-            <td>
-                <label>EQUIPMENT NO</label>
-            </td>
-            <td>
-                 <input type="text" name="userage" id="age" size="30" maxlength="8">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                    <label for="pass">Password</label>
-            </td>
-            <td>
-                    <input type="password" id="pass" size="30" minlength="4">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Hobbies</label>
-            </td>
-            <td>
-                <label>
-                    <input type="checkbox" checked> Cricket
-                </label>
-                <label>
-                    <input type="checkbox"> Football
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>job description</label>
-            </td>
-            <td>
-                <textarea rows="4" cols="40"></textarea>
-            </td>
-
-        <tr>
-            <td>
-                <input type="submit" value="Submit">
-                <input type="reset">
-            </td>
-        </tr>
-</fieldset>
-       
-
+    </p>
    
 </body>
 
+<marquee behavior="scroll" direction="right" scrollamount="3" >
+   
+<img src="images/bakery.jpg" alt="bakery" width="300" height="200">
+<img src="images/camera.jpg" alt="cameras" width="300" height="200">
+<img src="images/cameraroll.jpg" alt="cameras" width="300" height="200">
+<img src="images/cctv.jpg" alt="cameras" width="300" height="200">
+<img src="images/gamepads.jpg" alt="cameras" width="300" height="200">
+<img src="images/homecctv.jpg" alt="cameras" width="300" height="200">
+<img src="images/Mac-products.jpg" alt="cameras" width="300" height="200">
+<img src="images/microphone.jpg" alt="cameras" width="300" height="200">
+<img src="images/samasung_s7.jpg" alt="cameras" width="300" height="200">
+<img src="images/wall-cctv.jpg" alt="cameras" width="300" height="200">
+<img src="images/wirelesmouse.jpg" alt="cameras" width="300" height="200"></p>
+</marquee>
+</div>
+<div><marquee behavior="scroll" direction="left" scrollamount="3">
 
+<img src="images/huawei.jpg" alt="bakery" width="300" height="00">
+<img src="images/marriage_cake.jpg" alt="cameras" width="300" height="200"> 
+<img src="images/graduation-cake.jpg" alt="cameras" width="300" height="200">
+<img src="images/candy_cakes.jpg" alt="cameras" width="300" height="200">
+
+
+</marquee>
 
 </html>
